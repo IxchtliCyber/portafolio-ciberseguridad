@@ -68,6 +68,10 @@ Desarrollar habilidades prácticas en:
 •⁠  ⁠88 puntos obtenidos
 •⁠  ⁠Racha activa: 1 día
 
+### 📸 Introducción a la seguridad defensiva
+
+![Evidencia](evidencias/Comparte%20tu%20victoria%20con%20tus%20compa%C3%B1eros.png)
+
 ---
 
 ## ✍️ Reflexión
