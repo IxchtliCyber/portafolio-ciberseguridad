@@ -12,7 +12,7 @@ Su objetivo no es dañar sistemas, sino *identificar vulnerabilidades de forma a
 
 ---
 
-### Conceptos aprendidos
+## Conceptos aprendidos
 
 ### Seguridad ofensiva
 Área de la ciberseguridad enfocada en detectar vulnerabilidades mediante pruebas controladas.
@@ -40,55 +40,3 @@ Durante este laboratorio se realizó una prueba de descubrimiento de rutas ocult
 
 ```bash
 dirb http://fakebank.thm
-
-La herramienta DIRB permitió identificar recursos internos expuestos en la aplicación web.
-
-Rutas encontradas
-	•	/bank-transfer
-	•	/images
-
-Interpretación del resultado
-
-La ruta /bank-transfer respondió correctamente, lo que indicó que existía una funcionalidad activa dentro de la aplicación.
-
-Al acceder manualmente a esta ruta desde el navegador, se observó un panel administrativo que permitía registrar depósitos en cuentas bancarias internas.
-
-Esto demostró un caso de funcionalidad sensible expuesta sin controles de acceso adecuados.
-
-⸻
-
-Validación del hallazgo
-
-Dentro del panel encontrado se realizó una acción controlada en el laboratorio:
-	•	Cuenta seleccionada: 8881
-	•	Monto ingresado: $2000
-
-Con esto se comprobó que la funcionalidad no solo existía, sino que además estaba operativa y podía ser utilizada sin restricciones visibles.
-
-⸻
-
-Herramienta utilizada
-
-DIRB
-
-Herramienta de enumeración web utilizada para descubrir directorios, rutas y recursos ocultos dentro de una aplicación.
-
-⸻
-
-Lo más importante que aprendí
-	•	Cómo funciona la seguridad ofensiva a nivel introductorio.
-	•	Qué es la enumeración web.
-	•	Cómo una ruta oculta puede exponer una función sensible.
-	•	La diferencia entre descubrir una ruta y validar una vulnerabilidad.
-	•	Cómo una mala implementación de permisos puede derivar en acceso no autorizado.
-
-⸻
-
-Relación con el mundo real
-
-Este tipo de error puede presentarse en aplicaciones reales cuando:
-	•	existen paneles administrativos expuestos
-	•	no se validan correctamente los permisos del usuario
-	•	una función interna puede ser utilizada desde una URL directa
-
-Esto representa un riesgo importante porque puede permitir acciones sensibles sin autorización.
