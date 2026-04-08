@@ -104,8 +104,9 @@ Esto representa un riesgo importante porque puede permitir acciones sensibles si
 ### Vista del módulo completado
 La siguiente captura muestra la finalización exitosa del laboratorio en TryHackMe:
 
-![Captura final del módulo](./captura-final-real.png) 
----
+<p align="center">
+  <img src="captura-final-real.png" alt="Captura final del módulo" width="900">
+</p>
 
 ## Reflexión personal
 
